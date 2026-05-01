@@ -343,7 +343,7 @@ This project is licensed under the **MIT License** — see [LICENSE](LICENSE) fo
 ## 👨‍💻 Author
 
 **Mohammad Arkam**  
-*M.Pharm* | Pharma Analytics | Generative AI*
+M.Pharm | Pharma Analytics | Generative AI
 
 [![GitHub](https://img.shields.io/badge/GitHub-mohammadarkam077--beep-181717?style=for-the-badge&logo=github)](https://github.com/mohammadarkam077-beep)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin)](https://linkedin.com/in/YOUR-LINKEDIN-HANDLE)
