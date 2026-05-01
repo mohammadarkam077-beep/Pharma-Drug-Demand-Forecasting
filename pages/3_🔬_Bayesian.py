@@ -270,7 +270,7 @@ st.markdown("<div class='section-header'>📈 Posterior Distributions</div>", un
 posterior_path = Path("outputs/bayesian_posteriors.png")
 if posterior_path.exists():
     image = Image.open(posterior_path)
-    st.image(image, caption="Posterior distributions of key model parameters", use_container_width=True)
+    st.image(image, caption="Posterior Distributions", use_column_width=True)
 else:
     st.warning("⚠️ Posterior plot not found. Run `python bayesian_forecasting.py` to generate.")
 
