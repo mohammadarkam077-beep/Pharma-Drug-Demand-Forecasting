@@ -1,0 +1,25 @@
+population_group_id,population_group_name,measure_id,measure_name,location_id,location_name,sex_id,sex_name,age_id,age_name,cause_id,cause_name,metric_id,metric_name,year,val,upper,lower
+1,All Population,5,Prevalence,163,India,3,Both,22,All ages,976,Diabetes mellitus type 2,1,Number,2010,61304488.57897957,66888786.98764584,55728985.35880907
+1,All Population,5,Prevalence,163,India,3,Both,22,All ages,976,Diabetes mellitus type 2,3,Rate,2010,4978.45930391841,5431.95305311859,4525.67980075487
+1,All Population,5,Prevalence,163,India,3,Both,22,All ages,976,Diabetes mellitus type 2,1,Number,2011,64821414.3779252,70572200.92741108,59155457.66868765
+1,All Population,5,Prevalence,163,India,3,Both,22,All ages,976,Diabetes mellitus type 2,3,Rate,2011,5182.54564692696,5642.32755826696,4729.54597759029
+1,All Population,5,Prevalence,163,India,3,Both,22,All ages,976,Diabetes mellitus type 2,1,Number,2012,69070716.94542976,75107362.42550576,63281469.85974776
+1,All Population,5,Prevalence,163,India,3,Both,22,All ages,976,Diabetes mellitus type 2,3,Rate,2012,5440.0760463381,5915.52804580616,4984.10938217225
+1,All Population,5,Prevalence,163,India,3,Both,22,All ages,976,Diabetes mellitus type 2,1,Number,2013,73629259.14190221,80045805.47095102,67419175.85218152
+1,All Population,5,Prevalence,163,India,3,Both,22,All ages,976,Diabetes mellitus type 2,3,Rate,2013,5715.99187483796,6214.12165515638,5233.8902478516
+1,All Population,5,Prevalence,163,India,3,Both,22,All ages,976,Diabetes mellitus type 2,1,Number,2014,78013435.70973769,84934167.34008741,71438791.28839771
+1,All Population,5,Prevalence,163,India,3,Both,22,All ages,976,Diabetes mellitus type 2,3,Rate,2014,5972.44669806147,6502.27467445826,5469.11399635533
+1,All Population,5,Prevalence,163,India,3,Both,22,All ages,976,Diabetes mellitus type 2,1,Number,2015,81671473.439319,88959683.0824233,74772788.25092652
+1,All Population,5,Prevalence,163,India,3,Both,22,All ages,976,Diabetes mellitus type 2,3,Rate,2015,6168.69201131204,6719.17455691701,5647.630465363411
+1,All Population,5,Prevalence,163,India,3,Both,22,All ages,976,Diabetes mellitus type 2,1,Number,2016,85052412.54458508,92699913.52938572,77913657.66497046
+1,All Population,5,Prevalence,163,India,3,Both,22,All ages,976,Diabetes mellitus type 2,3,Rate,2016,6341.13986701423,6911.30445055652,5808.90519178692
+1,All Population,5,Prevalence,163,India,3,Both,22,All ages,976,Diabetes mellitus type 2,1,Number,2017,88802026.33695388,96839652.06567197,81341182.14205948
+1,All Population,5,Prevalence,163,India,3,Both,22,All ages,976,Diabetes mellitus type 2,3,Rate,2017,6538.82138947974,7130.6614769587395,5989.45185797785
+1,All Population,5,Prevalence,163,India,3,Both,22,All ages,976,Diabetes mellitus type 2,1,Number,2018,92644864.86117974,101059746.81344256,84788394.9498225
+1,All Population,5,Prevalence,163,India,3,Both,22,All ages,976,Diabetes mellitus type 2,3,Rate,2018,6741.140551516341,7353.43462792976,6169.47834454376
+1,All Population,5,Prevalence,163,India,3,Both,22,All ages,976,Diabetes mellitus type 2,1,Number,2019,96267992.87644592,105015102.68959798,88020417.7951138
+1,All Population,5,Prevalence,163,India,3,Both,22,All ages,976,Diabetes mellitus type 2,3,Rate,2019,6925.801379709,7555.0940802449395,6332.44667093413
+1,All Population,5,Prevalence,163,India,3,Both,22,All ages,976,Diabetes mellitus type 2,1,Number,2020,99214497.24773458,108174913.48342273,90639494.81675504
+1,All Population,5,Prevalence,163,India,3,Both,22,All ages,976,Diabetes mellitus type 2,3,Rate,2020,7063.731945150161,7701.6828511335,6453.221180274691
+1,All Population,5,Prevalence,163,India,3,Both,22,All ages,976,Diabetes mellitus type 2,1,Number,2021,100322799.93534727,109409996.4096636,91151364.40849328
+1,All Population,5,Prevalence,163,India,3,Both,22,All ages,976,Diabetes mellitus type 2,3,Rate,2021,7077.12246264231,7718.16520000883,6430.137206812101

@@ -1,0 +1,16 @@
+indicator,country,countryiso3code,date,value,unit,obs_status,decimal
+"{'id': 'SP.POP.TOTL', 'value': 'Population, total'}","{'id': 'IN', 'value': 'India'}",IND,2024,1450935791,,,0
+"{'id': 'SP.POP.TOTL', 'value': 'Population, total'}","{'id': 'IN', 'value': 'India'}",IND,2023,1438069596,,,0
+"{'id': 'SP.POP.TOTL', 'value': 'Population, total'}","{'id': 'IN', 'value': 'India'}",IND,2022,1425423212,,,0
+"{'id': 'SP.POP.TOTL', 'value': 'Population, total'}","{'id': 'IN', 'value': 'India'}",IND,2021,1414203896,,,0
+"{'id': 'SP.POP.TOTL', 'value': 'Population, total'}","{'id': 'IN', 'value': 'India'}",IND,2020,1402617695,,,0
+"{'id': 'SP.POP.TOTL', 'value': 'Population, total'}","{'id': 'IN', 'value': 'India'}",IND,2019,1389030312,,,0
+"{'id': 'SP.POP.TOTL', 'value': 'Population, total'}","{'id': 'IN', 'value': 'India'}",IND,2018,1374659064,,,0
+"{'id': 'SP.POP.TOTL', 'value': 'Population, total'}","{'id': 'IN', 'value': 'India'}",IND,2017,1359657400,,,0
+"{'id': 'SP.POP.TOTL', 'value': 'Population, total'}","{'id': 'IN', 'value': 'India'}",IND,2016,1343944296,,,0
+"{'id': 'SP.POP.TOTL', 'value': 'Population, total'}","{'id': 'IN', 'value': 'India'}",IND,2015,1328024498,,,0
+"{'id': 'SP.POP.TOTL', 'value': 'Population, total'}","{'id': 'IN', 'value': 'India'}",IND,2014,1312277191,,,0
+"{'id': 'SP.POP.TOTL', 'value': 'Population, total'}","{'id': 'IN', 'value': 'India'}",IND,2013,1295829511,,,0
+"{'id': 'SP.POP.TOTL', 'value': 'Population, total'}","{'id': 'IN', 'value': 'India'}",IND,2012,1278674502,,,0
+"{'id': 'SP.POP.TOTL', 'value': 'Population, total'}","{'id': 'IN', 'value': 'India'}",IND,2011,1261224954,,,0
+"{'id': 'SP.POP.TOTL', 'value': 'Population, total'}","{'id': 'IN', 'value': 'India'}",IND,2010,1243481564,,,0
