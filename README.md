@@ -1,605 +1,268 @@
 <div align="center">
 
-# 💊 AI-Powered Pharma Demand Forecasting & Decision Optimization System
+<!-- HEADER BANNER -->
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:0f4c81,100:00b4d8&height=200&section=header&text=Pharma%20Drug%20Demand%20Forecasting&fontSize=34&fontColor=ffffff&fontAlignY=38&desc=Patient-Based%20%7C%20Scenario%20Analysis%20%7C%20Monte%20Carlo%20Simulation&descAlignY=58&descSize=16&animation=fadeIn" />
 
-### Forecast demand. Quantify risk. Optimize investment. Plan inventory. Support executive decisions.
+<br/>
 
-![Python](https://img.shields.io/badge/Python-3.10%2B-blue?style=for-the-badge&logo=python)
-![Streamlit](https://img.shields.io/badge/Streamlit-Dashboard-red?style=for-the-badge&logo=streamlit)
-![Pandas](https://img.shields.io/badge/Pandas-Data%20Processing-purple?style=for-the-badge&logo=pandas)
-![Plotly](https://img.shields.io/badge/Plotly-Interactive%20Charts-3F4F75?style=for-the-badge&logo=plotly)
-![Optimization](https://img.shields.io/badge/Optimization-PuLP-green?style=for-the-badge)
-![Status](https://img.shields.io/badge/Status-Completed-brightgreen?style=for-the-badge)
+<!-- BADGES -->
+![Python](https://img.shields.io/badge/Python-3.8%2B-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![Pandas](https://img.shields.io/badge/Pandas-Data%20Wrangling-150458?style=for-the-badge&logo=pandas&logoColor=white)
+![NumPy](https://img.shields.io/badge/NumPy-Scientific%20Computing-013243?style=for-the-badge&logo=numpy&logoColor=white)
+![Matplotlib](https://img.shields.io/badge/Matplotlib-Visualization-11557C?style=for-the-badge&logo=plotly&logoColor=white)
+
+<br/>
+
+![Status](https://img.shields.io/badge/Status-Active-brightgreen?style=flat-square)
+![Domain](https://img.shields.io/badge/Domain-Pharmaceutical%20Analytics-blue?style=flat-square)
+![License](https://img.shields.io/badge/License-MIT-yellow?style=flat-square)
+![Author](https://img.shields.io/badge/Author-Md%20Arkam-ff69b4?style=flat-square)
+
+<br/><br/>
+
+> **A production-ready demand forecasting engine for pharmaceutical markets — built at the intersection of pharmacoeconomics and data science.**
 
 </div>
 
 ---
 
-## 📌 Project Summary
+## 🧭 Table of Contents
 
-This project is an **end-to-end pharmaceutical demand forecasting and decision optimization platform** built for strategic pharma market planning.
-
-It goes beyond traditional forecasting by converting predicted demand into **actionable business decisions** such as:
-
-- ✅ Which states should receive aggressive investment?
-- ✅ Which markets should be expanded selectively?
-- ✅ Which states should be monitored or deprioritized?
-- ✅ How much inventory should be prepared?
-- ✅ Which states should be selected under a limited budget?
-- ✅ What happens if demand, revenue, or risk assumptions change?
-- ✅ How much improvement is needed for a state to move into a better decision category?
-
-The final system works as a **Prescriptive Decision Support System** for pharmaceutical demand, supply, and investment planning.
-
----
-
-## 🚀 Live System Capabilities
-
-| Capability | Description |
+| Section | Description |
 |---|---|
-| 📈 Demand Forecasting | Forecasts national and state-level pharmaceutical demand |
-| 🗺️ State-Level Analysis | Ranks Indian states by demand, revenue, risk, and opportunity |
-| 🔬 Bayesian Risk Estimation | Converts forecast uncertainty into business risk scores |
-| 🎯 Sensitivity Analysis | Tests how input assumptions affect forecast outcomes |
-| 🧭 Decision Engine | Converts forecasts into recommended business actions |
-| 📦 Inventory Planning | Calculates safety stock, target stock, and reorder quantity |
-| 💰 Budget Planning | Allocates limited investment budget across eligible states |
-| 🧠 Portfolio Optimization | Uses optimization to select best investment portfolio |
-| 🔁 Scenario Simulation | Tests what-if changes in demand, revenue, and risk |
-| 🎯 Targeted State Simulation | Tests scenario impact on a selected state |
-| 📊 Opportunity-Risk Matrix | Visualizes states by opportunity and risk |
-| 🚨 Management Alerts | Generates executive-level decision alerts |
-| 🧾 Final Action Plan | Produces management-ready recommendations |
+| [📌 Overview](#-overview) | What this project does |
+| [🎯 Objectives](#-objectives) | What we forecast |
+| [🧠 Methodology](#-methodology) | The science behind the model |
+| [📊 Key Results](#-key-results) | Numbers that matter |
+| [💡 Business Insights](#-business-insights) | Strategic takeaways |
+| [🛠️ Tech Stack](#️-tech-stack) | Tools used |
+| [📁 Project Structure](#-project-structure) | Directory layout |
+| [🚀 Quick Start](#-quick-start) | Get running in minutes |
+| [📈 Outputs](#-outputs) | What you get |
+| [🔮 Roadmap](#-roadmap) | What's coming next |
 
 ---
 
-## 🧠 Problem Statement
+## 📌 Overview
 
-Pharmaceutical companies must make high-impact decisions under uncertainty:
+This project builds a **patient-based pharmaceutical drug demand forecasting model** grounded in real-world epidemiological data and pharmacoeconomic assumptions.
 
-- Where should they invest?
-- Which regions need more inventory?
-- Which markets are risky?
-- Which states have high growth potential?
-- How should limited budget be allocated?
+It estimates **drug demand, revenue potential, and market growth trends** for a chronic disease indication (e.g., **Type 2 Diabetes**) in the Indian market — combining deterministic projections with probabilistic simulation techniques.
 
-Traditional forecasting systems only answer:
+<div align="center">
 
-```text
-What will demand be?
+```
+Population Data  →  Epidemiology  →  Patient Pool  →  Demand  →  Revenue  →  Business Strategy
+```
 
-🏗️ System Architecture
-text
-                    ┌──────────────────────────┐
-                    │      Raw Health Data      │
-                    │  Population, Diabetes,    │
-                    │  Hospitals, Prevalence    │
-                    └─────────────┬────────────┘
-                                  │
-                                  ▼
-                    ┌──────────────────────────┐
-                    │    Data Processing        │
-                    │ Cleaning + Integration    │
-                    └─────────────┬────────────┘
-                                  │
-                                  ▼
-                    ┌──────────────────────────┐
-                    │   Forecasting Layer       │
-                    │ National + State Forecast │
-                    └─────────────┬────────────┘
-                                  │
-                                  ▼
-                    ┌──────────────────────────┐
-                    │ Bayesian Uncertainty      │
-                    │ Risk + Confidence Scores  │
-                    └─────────────┬────────────┘
-                                  │
-                                  ▼
-                    ┌──────────────────────────┐
-                    │     Decision Engine       │
-                    │ Opportunity + Risk Score  │
-                    └─────────────┬────────────┘
-                                  │
-              ┌───────────────────┼───────────────────┐
-              ▼                   ▼                   ▼
-   ┌──────────────────┐ ┌──────────────────┐ ┌──────────────────┐
-   │ Inventory Logic  │ │ Budget Optimizer │ │ Scenario Engine  │
-   └──────────────────┘ └──────────────────┘ └──────────────────┘
-              │                   │                   │
-              └───────────────────┼───────────────────┘
-                                  ▼
-                    ┌──────────────────────────┐
-                    │ Streamlit Decision UI     │
-                    │ Executive Dashboard       │
-                    └──────────────────────────┘
+</div>
 
+---
 
-🧭 Decision Intelligence Workflow
-text
-Forecast Demand
-      ↓
-Estimate Revenue
-      ↓
-Measure Forecast Risk
-      ↓
-Compute Opportunity Score
-      ↓
-Assign Decision Confidence
-      ↓
-Classify Business Action
-      ↓
-Generate Inventory Decision
-      ↓
-Run Scenario Simulation
-      ↓
-Optimize Budget Allocation
-      ↓
-Produce Executive Action Plan
+## 🎯 Objectives
 
-📊 Dashboard Preview
+<table>
+<tr>
+<td align="center" width="200">📦<br/><b>Drug Demand</b><br/><sub>Annual unit forecast</sub></td>
+<td align="center" width="200">💰<br/><b>Revenue Potential</b><br/><sub>Market value in ₹ Cr</sub></td>
+<td align="center" width="200">📈<br/><b>Growth Trends</b><br/><sub>CAGR & YoY analysis</sub></td>
+<td align="center" width="200">⚠️<br/><b>Risk Modeling</b><br/><sub>Uncertainty via simulation</sub></td>
+</tr>
+</table>
 
-🧭 Decision-Making Dashboard
-markdown
-![Decision Dashboard](screenshots/decision_dashboard.png)
-📊 Opportunity-Risk Matrix
-markdown
-![Opportunity Risk Matrix](screenshots/opportunity_risk_matrix.png)
-🔁 Scenario Simulation
-markdown
-![Scenario Simulation](screenshots/scenario_simulation.png)
-📦 Inventory Decision
-markdown
-![Inventory Decision](screenshots/inventory_decision.png)
-💰 Optimization Output
-markdown
-![Optimization Output](screenshots/optimization_output.png)
+---
 
-🧩 Dashboard Pages
-Page	Purpose
-📈 National Forecast	Shows national demand and revenue forecast
-🗺️ State Explorer	Explores state-wise demand and opportunity
-🔬 Bayesian	Displays uncertainty and forecast intervals
-🎯 Sensitivity	Shows impact of key business assumptions
-📋 Executive Summary	Summarizes high-level market opportunity
-🧭 Decision Making	Converts forecasts into decisions and action plans
+## 🧠 Methodology
 
-🔥 Core Features
-1. 📈 National Demand Forecasting
-The system forecasts national-level pharmaceutical demand and revenue.
+The forecasting pipeline follows a structured **5-step patient-based approach**:
 
-Outputs:
+```
+┌─────────────────────────────────────────────────────────────────┐
+│                   FORECASTING PIPELINE                          │
+│                                                                 │
+│  [1] Population Data                                            │
+│       └─ Year-wise Indian population dataset                    │
+│                    │                                            │
+│                    ▼                                            │
+│  [2] Epidemiological Parameters                                 │
+│       ├─ Prevalence rate (time-varying)                         │
+│       ├─ Diagnosis rate                                         │
+│       ├─ Treatment rate                                         │
+│       ├─ Market share (growth-adjusted)                         │
+│       └─ Patient compliance                                     │
+│                    │                                            │
+│                    ▼                                            │
+│  [3] Patient Pool Calculation                                   │
+│       └─ Eligible patients = f(population × epi params)         │
+│                    │                                            │
+│                    ▼                                            │
+│  [4] Demand & Revenue Estimation                                │
+│       ├─ Demand = Patients × Daily Dose × 365                   │
+│       └─ Revenue = Demand × Price per unit                      │
+│                    │                                            │
+│                    ▼                                            │
+│  [5] Advanced Analytics                                         │
+│       ├─ Scenario Analysis  (Worst / Base / Best)               │
+│       ├─ Monte Carlo Simulation  (10,000 iterations)            │
+│       ├─ Sensitivity Analysis                                   │
+│       └─ CAGR & Peak Demand Identification                      │
+└─────────────────────────────────────────────────────────────────┘
+```
 
-Forecasted patient demand
-Forecasted revenue
-Demand trend plots
-Revenue trend plots
-Confidence visualization
-2. 🗺️ State-Level Forecasting
-State-level forecasting helps identify high-potential regional markets.
+---
 
-The system generates:
+## 📊 Key Results
 
-State-wise forecast demand
-State-wise forecast revenue
-State priority ranking
-Hospital infrastructure integration
-3. 🔬 Bayesian Uncertainty & Risk Scoring
-Forecasts are uncertain. This system converts uncertainty into a business-friendly risk_score.
+<div align="center">
 
-text
-Low Risk    → High Confidence
-Medium Risk → Medium Confidence
-High Risk   → Low Confidence
-This prevents decision-makers from investing blindly in high-demand but uncertain markets.
+| Metric | Value | Interpretation |
+|:---|:---:|:---|
+| 📦 **Demand Start (Base Year)** | 0.91 Billion Units | Baseline market size |
+| 📦 **Demand End (Forecast Year)** | 3.13 Billion Units | Projected market size |
+| 💰 **Revenue Start** | ₹10.8 Billion | Initial revenue potential |
+| 💰 **Revenue End** | ₹37.5 Billion | Future revenue potential |
+| 📈 **Market CAGR** | ~9.27% | Strong consistent growth |
+| 🏔️ **Peak Demand Year** | 2024 | Inflection point identified |
+| ↗️ **Total Demand Growth** | +2.23 Billion Units | Absolute market expansion |
+| 💎 **Revenue Potential** | ₹3,700+ Cr | Investable opportunity size |
 
-4. 🧭 Decision Engine
-The decision engine converts forecast data into recommended business actions.
+</div>
 
-It considers:
+---
 
-Demand potential
-Revenue potential
-Growth rate
-Hospital infrastructure
-Forecast uncertainty
-Risk score
-Opportunity score
-🧮 Opportunity Score Formula
-text
-Opportunity Score =
-    0.35 × Revenue Score
-  + 0.30 × Demand Score
-  + 0.20 × Infrastructure Score
-  + 0.10 × Growth Score
-  - 0.15 × Risk Score
+## 💡 Business Insights
 
-🏷️ Recommendation Categories
-Condition	Recommendation
-High opportunity + low risk	Invest Aggressively
-High opportunity + high risk	Pilot First
-Medium opportunity	Selective Expansion
-Low-medium opportunity	Maintain and Monitor
-Low opportunity	Deprioritize
-✅ Example Decision Output
-text
-State: Maharashtra
-Forecast Demand: 782.76M
-Forecast Revenue: ₹1616.98 Cr
-Opportunity Score: 0.89
-Risk Score: 0.06
-Decision Confidence: High Confidence
-Recommended Action: Invest Aggressively
-Reason: High demand/revenue opportunity with acceptable risk.
-📊 Opportunity-Risk Matrix
-The system includes a strategic 2x2 decision matrix.
+<details>
+<summary><b>📌 Click to expand full strategic analysis</b></summary>
 
-Quadrant	Meaning	Action
-High Opportunity + Low Risk	Best markets	Scale / Invest
-High Opportunity + High Risk	Promising but uncertain	Pilot / Validate
-Low Opportunity + Low Risk	Stable but limited	Maintain
-Low Opportunity + High Risk	Weak and risky	Avoid / Deprioritize
-This matrix gives executives a quick visual map of where to invest, pilot, maintain, or avoid.
+<br/>
 
-🚨 Management Alerts
-The dashboard automatically generates executive alerts.
+### ✅ What the Model Reveals
 
-Example alerts:
+**1. Growth Is Structural, Not Cyclical**
+The demand growth is driven by expanding patient pools — a result of rising prevalence, improving diagnosis infrastructure, and treatment access — making this a durable, long-term trend rather than a short-term spike.
 
-text
-Maharashtra is a high-priority investment market.
-Tamil Nadu is a good candidate for controlled expansion.
-Maharashtra requires a large inventory replenishment.
-Alert severity:
+**2. Treatment Penetration Is the Leverage Point**
+Even small improvements in diagnosis and treatment rates create outsized demand growth. This makes awareness campaigns and HCP engagement highly ROI-positive.
 
-Severity	Meaning
-High	Immediate executive attention
-Medium	Planning or monitoring required
-Low	Informational
-📦 Inventory / Supply Planning
-The system recommends inventory actions using:
+**3. Market CAGR Outpaces GDP Growth**
+At ~9.27%, the market CAGR signals pharmaceutical companies should be **building capacity now**, not reactively.
 
-Forecast demand
-Current stock assumption
-Safety stock
-Target stock
-Service level
-Inventory Logic
-text
-Current Stock = Forecast Demand × Current Stock %
-Safety Stock = Service Level Multiplier × Estimated Demand Standard Deviation
-Target Stock = Forecast Demand + Safety Stock
-Recommended Order Quantity = Target Stock - Current Stock
-Service Levels
-Service Level	Multiplier
-90%	1.28
-95%	1.65
-98%	2.05
-Inventory action output:
+**4. Risk Is Manageable Under Monte Carlo**
+The simulation shows demand remains positive across 95%+ of scenarios, suggesting robust fundamentals even under pessimistic assumptions.
 
-text
-Reorder / Increase Supply
-No Reorder Needed
-💰 Budget-Based Investment Planning
-Users can enter an available investment budget.
+### ⚠️ Risks & Limitations
 
-The system selects eligible states based on:
+- Pricing assumptions are **static** — real-world pricing dynamics (generics, tenders, NPPA caps) could compress margins
+- Regional variation not captured — urban vs. rural treatment gaps may skew national-level insights
+- Competition from biosimilars / new entrants not modeled
 
-Opportunity score
-Recommended action
-Estimated investment cost
-Available budget
-Example:
+</details>
 
-text
-Available Budget: ₹100 Cr
-Used Budget: ₹82.68 Cr
-Selected States: 3
-🧠 Advanced Investment Optimization
-The project includes portfolio optimization using PuLP.
+---
 
-Objective
-text
-Maximize total expected opportunity value
-Constraints
-text
-Total investment cost ≤ Available budget
-Average risk ≤ Maximum allowed risk
-Only eligible states are selected
-This makes the system more advanced than simple ranking.
+## 🛠️ Tech Stack
 
-🔁 Scenario Simulation
-Users can test how decisions change when assumptions change.
+<div align="center">
 
-Scenario controls:
+| Tool | Role | Version |
+|:---:|:---:|:---:|
+| ![Python](https://img.shields.io/badge/-Python-3776AB?logo=python&logoColor=white&style=flat-square) | Core language | 3.8+ |
+| ![Pandas](https://img.shields.io/badge/-Pandas-150458?logo=pandas&logoColor=white&style=flat-square) | Data manipulation | Latest |
+| ![NumPy](https://img.shields.io/badge/-NumPy-013243?logo=numpy&logoColor=white&style=flat-square) | Monte Carlo simulation | Latest |
+| ![Matplotlib](https://img.shields.io/badge/-Matplotlib-11557C?style=flat-square) | Visualization | Latest |
 
-Demand change %
-Revenue change %
-Risk change %
-The system recalculates:
+</div>
 
-Scenario demand
-Scenario revenue
-Scenario opportunity score
-Scenario recommendation
-Recommendation changes
-🎯 Targeted State Scenario
-Users can select one state and test targeted improvements.
+---
 
-Example:
+## 📁 Project Structure
 
-text
-Target State: Kerala
-Demand Change: +35%
-Revenue Change: +35%
-Risk Change: -10%
-The system shows:
-
-Original rank
-Scenario rank
-Rank change
-Original action
-Scenario action
-📈 Required Improvement Analysis
-This feature estimates how much improvement is required for a state to move into a better decision category.
-
-Example:
-
-text
-Kerala needs approximately +35% demand/revenue improvement
-to move from Maintain and Monitor to Selective Expansion.
-This is useful for:
-
-Market development planning
-Sales strategy
-Diagnosis campaign planning
-Channel expansion decisions
-🧾 ABC Inventory Classification
-ABC classification groups states by revenue contribution.
-
-Class	Meaning	Suggested Strategy
-A	Highest revenue contribution	Highest service priority
-B	Medium contribution	Standard monitoring
-C	Lower contribution	Controlled inventory exposure
-This supports smarter inventory and supply-chain planning.
-
-📋 Final Executive Action Plan
-The dashboard automatically creates a final management action plan:
-
-text
-1. Immediate Investment Priority
-2. Controlled Expansion Markets
-3. Maintain and Monitor Markets
-4. Deprioritized Markets
-This turns analysis into boardroom-ready recommendations.
-
-🗂️ Project Structure
-text
-Pharma-Drug-Demand-Forecasting/
+```
+📦 Pharma-Drug-Demand-Forecasting/
 │
-├── app.py
-├── forecasting.py
-├── state_forecasting.py
-├── bayesian_forecasting.py
-├── sensitivity_analysis.py
-├── decision_engine.py
-├── run_all.py
-├── live_data_pipeline.py
-├── process_real_data.py
-├── process_state_data.py
+├── 🐍 forecasting.py              # Main forecasting engine
 │
-├── data/
-│   ├── hospitals_by_state.csv
-│   ├── state_master.csv
-│   ├── india_diabetes_real_master.csv
-│   ├── state_prevalence_icmr.csv
-│   ├── live_wb_population.csv
-│   ├── live_wb_health_exp.csv
-│   ├── live_who_diabetes.csv
-│   └── ...
+├── 📂 data/
+│   └── 📄 India_dataset_population.csv   # Population dataset (India)
 │
-├── outputs/
-│   ├── forecast_output.csv
-│   ├── forecast_output_advanced.csv
-│   ├── forecast_combined_state_year.csv
-│   ├── bayesian_state_intervals.csv
-│   ├── sensitivity_analysis.csv
-│   ├── decision_recommendations.csv
-│   ├── demand_plot.png
-│   ├── revenue_plot.png
-│   ├── tornado_chart.png
-│   └── ...
+├── 📂 outputs/
+│   ├── 📊 demand_plot.png         # Demand forecast visualization
+│   ├── 💰 revenue_plot.png        # Revenue forecast visualization
+│   └── 📁 forecast_output.csv    # Full forecast results (tabular)
 │
-├── pages/
-│   ├── 1_📈_National_Forecast.py
-│   ├── 2_🗺️_State_Explorer.py
-│   ├── 3_🔬_Bayesian.py
-│   ├── 4_🎯_Sensitivity.py
-│   ├── 5_📋_Executive_Summary.py
-│   └── 6_🧭_Decision_Making.py
-│
-├── requirements.txt
-├── runtime.txt
-└── README.md
-🧠 Important Files
-File	Purpose
-app.py	Main Streamlit app entry point
-forecasting.py	National demand and revenue forecasting
-state_forecasting.py	State-level forecasting
-bayesian_forecasting.py	Bayesian uncertainty estimation
-sensitivity_analysis.py	Sensitivity and tornado analysis
-decision_engine.py	Core decision intelligence logic
-run_all.py	Runs the full pipeline
-6_🧭_Decision_Making.py	Final decision dashboard
-⚙️ Installation
-1. Clone the repository
-bash
-git clone https://github.com/your-username/Pharma-Drug-Demand-Forecasting.git
+├── 📋 requirements.txt            # Python dependencies
+└── 📖 README.md                   # You are here
+```
+
+---
+
+## 🚀 Quick Start
+
+### Prerequisites
+- Python 3.8+
+- pip
+
+### Installation & Run
+
+```bash
+# 1. Clone the repository
+git clone https://github.com/mohammadarkam077-beep/Pharma-Drug-Demand-Forecasting.git
+
+# 2. Navigate into the project
 cd Pharma-Drug-Demand-Forecasting
-2. Create a virtual environment
-bash
-python -m venv venv
-Activate it.
 
-For Windows:
-
-bash
-venv\Scripts\activate
-For macOS/Linux:
-
-bash
-source venv/bin/activate
-3. Install dependencies
-bash
+# 3. Install dependencies
 pip install -r requirements.txt
-If PuLP is missing:
 
-bash
-pip install pulp
-📦 Requirements
-text
-streamlit
-pandas
-numpy
-plotly
-matplotlib
-seaborn
-scikit-learn
-pulp
-openpyxl
-▶️ How to Run
-Run full pipeline
-bash
-python run_all.py
-Launch dashboard
-bash
-streamlit run app.py
-📤 Generated Outputs
-Output File	Description
-forecast_output.csv	National forecast
-forecast_output_advanced.csv	Advanced forecast output
-forecast_combined_state_year.csv	State-year forecast
-bayesian_state_intervals.csv	Bayesian intervals
-sensitivity_analysis.csv	Sensitivity results
-decision_recommendations.csv	Final decision recommendations
-demand_plot.png	Demand visualization
-revenue_plot.png	Revenue visualization
-tornado_chart.png	Sensitivity tornado chart
-🧾 Final Decision Output Columns
-Column	Description
-priority_rank	State priority rank
-state	State name
-year	Forecast year
-forecast_demand	Forecasted demand
-forecast_revenue	Forecasted revenue
-growth_rate	Growth estimate
-hospital_count	Hospital infrastructure
-opportunity_score	Business opportunity score
-risk_score	Forecast uncertainty score
-decision_confidence	Confidence label
-recommended_action	Final recommended action
-reason	Business explanation
-🏢 Business Impact
-This system can help pharma companies with:
+# 4. Run the forecasting model
+python forecasting.py
+```
 
-Strategic Planning
-State prioritization
-Market expansion planning
-Launch strategy
-Regional investment decisions
-Supply Chain Planning
-Inventory allocation
-Safety stock planning
-Stockout prevention
-Service-level planning
-Commercial Planning
-Sales force allocation
-Revenue opportunity assessment
-Channel strategy
-Market access planning
-Risk Management
-Forecast uncertainty monitoring
-Pilot-vs-scale decision-making
-Scenario testing
-Confidence-based recommendations
-📊 Analytics Maturity
-Analytics Type	Implemented
-Descriptive Analytics	✅
-Diagnostic Analytics	✅
-Predictive Analytics	✅
-Prescriptive Analytics	✅
-Scenario Analytics	✅
-Optimization	✅
-The system moves from:
+> ✅ Outputs will be saved automatically to the `/outputs` folder.
 
-text
-What happened?
-to:
+---
 
-text
-What will happen?
-to:
+## 📈 Outputs
 
-text
-What should we do?
-🧪 Example Use Case
-A decision-maker selects Kerala in the targeted scenario module.
+After running `forecasting.py`, you'll find:
 
-The system finds:
+| Output File | Type | Description |
+|---|---|---|
+| `demand_plot.png` | 📊 Chart | Year-wise drug demand forecast (Worst/Base/Best scenarios) |
+| `revenue_plot.png` | 💰 Chart | Revenue projection with Monte Carlo confidence intervals |
+| `forecast_output.csv` | 📁 Data | Complete numerical forecast table for further analysis |
 
-text
-Current Action: Maintain and Monitor
-Target Action: Selective Expansion
-Required Improvement: +35%
-Business interpretation:
+---
 
-text
-Kerala requires approximately 35% improvement in demand/revenue
-before it becomes eligible for selective expansion.
-This insight can support:
+## 🔮 Roadmap
 
-Marketing investment
-Diagnosis campaigns
-Distribution expansion
-Hospital partnerships
-🛠️ Technology Stack
-Layer	Tools
-Programming	Python
-Dashboard	Streamlit
-Data Processing	Pandas, NumPy
-Visualization	Plotly, Matplotlib
-Forecasting	Python forecasting pipeline
-Optimization	PuLP
-Uncertainty	Bayesian-style intervals
-Output	CSV, PNG
-UI	Multi-page Streamlit app
-🚀 Future Enhancements
-Planned future improvements:
+- [ ] 🌐 Integrate real-world datasets (WHO, IHME, NFHS)
+- [ ] 🗺️ Add regional segmentation (State-level forecasting)
+- [ ] 📊 Build an interactive dashboard (Power BI / Streamlit)
+- [ ] 💲 Model dynamic pricing (generic competition, NPPA regulations)
+- [ ] 🏥 Expand to multiple therapeutic areas
+- [ ] 🤖 ML-based prevalence rate prediction
 
-Product/SKU-level forecasting
-District-level demand forecasting
-ERP inventory integration
-Supplier lead-time modeling
-Stockout probability estimation
-Multi-objective optimization
-Automated retraining pipeline
-API backend for decision recommendations
-Role-based user access
-Docker deployment
-Cloud deployment on AWS/Azure/GCP
-📌 Current Status
-text
-✅ Data pipeline
-✅ National forecasting
-✅ State forecasting
-✅ Bayesian risk estimation
-✅ Sensitivity analysis
-✅ Decision engine
-✅ Inventory planning
-✅ Scenario simulation
-✅ Targeted scenario simulation
-✅ Required improvement analysis
-✅ Budget planning
-✅ Portfolio optimization
-✅ Opportunity-risk matrix
-✅ Management alerts
-✅ Executive action plan
+---
+
+## 👤 Author
+
+<div align="center">
+
+**Md Arkam**
+*MPharm · Pharmaceutical Sciences + Data Analytics*
+
+[![GitHub](https://img.shields.io/badge/GitHub-mohammadarkam077--beep-181717?style=for-the-badge&logo=github)](https://github.com/mohammadarkam077-beep)
+
+</div>
+
+---
+
+<div align="center">
+
+**If this project helped you, give it a ⭐ — it means a lot!**
+
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:00b4d8,100:0f4c81&height=100&section=footer" />
+
+</div>
